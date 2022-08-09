@@ -77,18 +77,18 @@ jobs:
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
-      run: environment/demo/terraform init
+      run: GithubAction_CI_Terraform_ECR_Docker_ECS_EFS/environment/demo/terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform fmt -check
+      run: GithubAction_CI_Terraform_ECR_Docker_ECS_EFS/environment/demo/terraform fmt -check
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: environment/demo/terraform plan -input=false
+      run: GithubAction_CI_Terraform_ECR_Docker_ECS_EFS/environment/demo/environment/demo/terraform plan -input=false
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
     #- name: Terraform Apply
      # if: github.ref == 'refs/heads/"main"' && github.event_name == 'push'
-     # run: environment/demo/terraform apply -auto-approve -input=false
+     # run: GithubAction_CI_Terraform_ECR_Docker_ECS_EFS/environment/demo/environment/demo/terraform apply -auto-approve -input=false
