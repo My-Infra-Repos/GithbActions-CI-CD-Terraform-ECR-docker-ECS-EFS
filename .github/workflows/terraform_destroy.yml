@@ -45,13 +45,9 @@
 name: 'Terraform_destroy'
 
 on:
-  push:
-    branches:
-    - "main"
-  pull_request:
-
-permissions:
-  contents: read
+  workflow_dispatch:
+    inputs: { "Destroy"}
+    name: "Destroy the terraform Infra"
 
 jobs:
   terraform:
@@ -106,6 +102,6 @@ jobs:
     #   # run: terraform -chdir='environment/demo' apply -auto-approve -input=false
 
     - name: Terraform Destroy
-      run: terraform -chdir='environment/demo' apply -auto-approve -input=false
+      run: terraform -chdir='environment/demo' destroy -auto-approve -input=false
 
 
