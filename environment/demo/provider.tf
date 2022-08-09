@@ -16,6 +16,6 @@ provider "aws" {
    backend "s3" {
      bucket = "praveen-terraform-state"
      key    = "default-infrastructure"
-     region = "eu-central-1"
+     region = "us-east-1"
    }
  }
