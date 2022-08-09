@@ -11,3 +11,11 @@ terraform {
 provider "aws" {
 
 }
+
+ terraform {
+   backend "s3" {
+     bucket = "praveen-terraform-state"
+     key    = "default-infrastructure"
+     region = "eu-central-1"
+   }
+ }
