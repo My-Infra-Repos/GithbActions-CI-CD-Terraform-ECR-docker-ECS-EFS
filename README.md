@@ -1,7 +1,7 @@
 Github Actions Integration with terraform to create VPC->SG-> ECR -> ECS- > EFS & mounting of EFS
 ==================================================================================================
 # What it contains
-1. ### It contains a terraform code create ECR, ECS, Task defnitions, VPC, Security groups, EFS, policies to mount EFS.
+1. ### It contains a terraform code to create ECR, ECS, Task defnitions, VPC, Security groups, EFS, policies to mount EFS.
 
 2. ### How it could be run?
 It also contain 2 Github Work Flow 
@@ -40,7 +40,7 @@ What You need to do to test this code?
 5. check all of the logs.
 6. You can contact me to see how the infra has been created in aws.
 7. Run anoher work flow to destroy the infra from 
-   repo -> Actions-> terraform_destroy to destroy the infra. (You need toenter Destroy to proceed further)
+   repo -> Actions-> terraform_destroy to destroy the infra. (You need to enter Destroy to proceed further)
 ----------------------------------------------
 ### (B) Test this from command line on your system
 ------------------------------
@@ -51,13 +51,15 @@ What You need to do to test this code?
 5. In providers section uncomment the profile block & region
 6. Also remove my remote backend
 7. Goto -> environment\demo folder & run following commands
-   a) terraform init
-   b) terraform plan
-   c) terraform apply
-
+   ``sh a) terraform init
+        b) terraform plan
+        c) terraform apply
+``sh
    To destroy Please rund the following
-
+``sh
    d) terraform destroy
+``sh
+
 -------------------------------------------------------
 ### (C) Want to test it with your github account then
 ---------------------------------------------------
@@ -74,7 +76,7 @@ What You need to do to test this code?
 9. You can Watch it to be completed in repo->Actions->Terraform_Plan_Apply workflow
 10. Check all of the logs.
 11. You can cross check your aws account to verify the build.
-12. Run anoher work flow from repo -> Actions-> terraform_destroy to destroy the infra. (You need toenter Destroy to proceed further)
+12. Run anoher work flow from repo -> Actions-> terraform_destroy to destroy the infra. (You need to enter Destroy to proceed further)
 
 
 
