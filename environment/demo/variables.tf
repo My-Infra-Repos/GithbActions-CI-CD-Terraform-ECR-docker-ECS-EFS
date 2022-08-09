@@ -69,4 +69,17 @@ variable "repository_url" {
 
 }
 
+variable "access_key" {
+  description = "The id of the one AWS account this code is permitted to run against. This need to be declared as Github Secret which will be accessed by Github Actions with TF_VAR_access_key"
+  type        = string
+}
 
+variable "secret_key" {
+  description = "The id of the one AWS account this code is permitted to run against. This need to be declared as Github Secret which will be accessed by Github Actions with TF_VAR_secret_key"
+  type        = string
+}
+
+/* variable "access_key" {
+  description = "The id of the one AWS account this code is permitted to run against. This need to be declared as Github Secret which will be accessed by Github Actions with TF_VAR_access_key"
+  type        = string
+} */
