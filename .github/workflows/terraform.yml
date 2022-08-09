@@ -97,7 +97,7 @@ jobs:
       run: terraform -chdir='environment/demo' plan -input=false
 
     - name: Terraform Destroy
-      if: github.ref == 'refs/heads/"terraform-destroy"' && github.event_name == 'push'
+      if: github.ref == 'refs/heads/"main"' && github.event_name == 'pull_request'
       run: terraform -chdir='environment/demo' destroy --auto-approve -input=false
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
