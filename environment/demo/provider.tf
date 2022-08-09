@@ -15,7 +15,7 @@ provider "aws" {
  terraform {
    backend "s3" {
      bucket = "praveen-terraform-state"
-     key    = "default-infrastructure"
+     key    = "GitHUBACtions_DOCKER_ECR_ECS_EFS"
      region = "us-east-1"
    }
  }
