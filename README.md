@@ -1,15 +1,15 @@
 Github Actions Integration with terraform to create VPC->SG-> ECR -> ECS- > EFS & mounting of EFS
 ==================================================================================================
-### What it contains
-1. It contains a terraform code create ECR, ECS, Task defnitions, VPC, Security groups, EFS, policies to mount EFS.
+# What it contains
+1. ### It contains a terraform code create ECR, ECS, Task defnitions, VPC, Security groups, EFS, policies to mount EFS.
 
-2. How it could be run?
+2. ### How it could be run?
 It also contain 2 Github Work Flow 
     1. "Terraform_Plan_Apply"
     2. Terraform destroy
 
-One with name "Terraform_Plan_Apply" will triggred automatically with a push in main branch with Github Actions to:
-----------------------
+##### 1. Workflow "Terraform_Plan_Apply" will triggred automatically with a push in main branch with Github Actions to:
+
  a. Triggre Terraform to create 
     A. VPC
     B. Necessary Security Groups
@@ -21,7 +21,7 @@ One with name "Terraform_Plan_Apply" will triggred automatically with a push in 
     G. Mouting of EFS to ECS tasks
     H. Necessary Policies.
 
-2. GitHub Work Flow Name Terraform Destroy Prsent in Gighub->Repo->Actions which could be triggered manually 
+##### 2. GitHub Work Flow Name Terraform Destroy Prsent in Gighub->Repo->Actions which could be triggered manually 
 b. To destroy all the infrastructure created in teraform.
 
 What You need
@@ -31,7 +31,7 @@ A Valid AWS account with programatic access enabled with access_key & secret_key
 
 What You need to do to test this code?
 ======================================
-## (A) test it in Same repo & my account.
+### (A) test it in Same repo & my account.
 ----------------------------------------
 1. Clone this repo & do some dummy update say in add some comment in READMDEmd.
 2. Make some meaningful comments & do a push.
@@ -42,7 +42,7 @@ What You need to do to test this code?
 7. Run anoher work flow to destroy the infra from 
    repo -> Actions-> terraform_destroy to destroy the infra. (You need toenter Destroy to proceed further)
 ----------------------------------------------
-## (B) Test this from command line on your system
+### (B) Test this from command line on your system
 ------------------------------
 1. Take a system which have terraform installed.
 2. Install aws-cli
@@ -59,7 +59,7 @@ What You need to do to test this code?
 
    d) terraform destroy
 -------------------------------------------------------
-## (C) Want to test it with your github account then
+### (C) Want to test it with your github account then
 ---------------------------------------------------
 1. Clone this repo from main branch
 2. Remove my backend from providers section.
