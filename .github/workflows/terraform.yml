@@ -42,20 +42,15 @@
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-name: 'Terraform_Destroy'
-
+name: 'Terraform_Plan_Apply'
 on:
   push:
     branches:
     - "main"
     #- "terraform-destroy"
   pull_request:
-    branches:
-    - "terraform-destroy"
-
   discussion_comment:
-    branches:
-      - "terraform-destroy"
+ 
     
 
 
