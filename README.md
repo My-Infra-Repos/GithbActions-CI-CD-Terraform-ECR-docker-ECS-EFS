@@ -38,7 +38,7 @@ A Valid AWS account with programatic access enabled with access_key & secret_key
 
 What You need to do to test this code?
 ======================================
-### (A) test it in Same repo & my account.
+### (A) Test it in Same repo, same github account my aws account in same structure the please contact me.
 ----------------------------------------
 1. Clone this repo & do some dummy checkin say add some comment in READMDEmd.
 2. Make some meaningful comments & do a push.
