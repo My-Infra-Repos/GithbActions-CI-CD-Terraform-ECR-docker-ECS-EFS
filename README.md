@@ -1,7 +1,7 @@
 Github Actions Integration with terraform to create VPC,SG, ECR , ECS, EFS & mounting of EFS
 ==================================================================================================
 # What it contains
-1. ### This is a complete CI-CD pipeline through Github actions which contains terraform code & Github Workflow. As soon as there is a checkin in main branch a github action workflow tearrform_plan_apply will automatically trigger to create the below:
+1. ### This is a complete CI-CD pipeline through Github workflow actions present in .github folder along with Terraform code present in modules folder & environment/demo folder. As soon as there is a checkin in main branch a github workflow will trigger the terrform scripts with workflow name tearrform_plan_apply which will create the followings in AWS on broader level with terraform:
 
     A. VPC
     B. CIDR
