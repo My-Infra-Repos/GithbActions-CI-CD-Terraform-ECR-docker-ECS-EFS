@@ -58,15 +58,15 @@ What You need to do to test this code?
 5. In providers section uncomment the profile block & region
 6. Also remove my remote backend
 7. Goto , environment\demo folder & run following commands
-  ``sh 
+  ` 
    a) terraform init
    b) terraform plan
    c) terraform apply
-  ``sh
+  `
  8. To destroy Please rund the following
-`sh
+`
    d) terraform destroy
-`sh
+`
 -------------------------------------------------------
 ### (C) Want to test it with your github account then
 ---------------------------------------------------
