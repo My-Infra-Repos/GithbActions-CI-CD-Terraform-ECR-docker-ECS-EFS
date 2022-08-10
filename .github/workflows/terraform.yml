@@ -58,7 +58,8 @@ jobs:
 
     - name: Terraform Apply
       if: github.event_name == 'push'
-      run: terraform -chdir='environment/demo' apply -auto-approve -input=false
+      run: echo 'Apply is commented out here as we have implemented full pipeline in Question 3 in https://github.com/praveen1664/Github-Bitcoin-Pipeline.git repository But you can chack the plan name=SELECTED_COLOR::green'
+      #run: terraform -chdir='environment/demo' apply -auto-approve -input=false
        
 
 
