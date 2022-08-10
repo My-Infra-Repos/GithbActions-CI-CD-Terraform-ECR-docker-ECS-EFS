@@ -63,9 +63,10 @@ What You need to do to test this code?
    b) terraform plan
    c) terraform apply
   ``sh
-   To destroy Please rund the following
-
+ 8. To destroy Please rund the following
+`sh
    d) terraform destroy
+`sh
 -------------------------------------------------------
 ### (C) Want to test it with your github account then
 ---------------------------------------------------
