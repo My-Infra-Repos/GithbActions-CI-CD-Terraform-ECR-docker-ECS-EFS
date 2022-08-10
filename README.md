@@ -1,8 +1,7 @@
 Github Actions Integration with terraform to create VPC,SG, ECR , ECS, EFS & mounting of EFS
 ==================================================================================================
 # What it contains
-1. ### This is a complete CI-CD pipeline through Github actions which follow the below routein:
-As soon as there is a checkin in main branch a github action workflow tearrform_plan_apply will automatically trigger to create the below:
+1. ### This is a complete CI-CD pipeline through Github actions which contains terraform code & Github Workflow. As soon as there is a checkin in main branch a github action workflow tearrform_plan_apply will automatically trigger to create the below:
 
     A. VPC
     B. CIDR
@@ -21,10 +20,10 @@ As soon as there is a checkin in main branch a github action workflow tearrform_
    ###### 1. "Terraform_Plan_Apply"
    ###### 2. Terraform destroy
 
-##### 1. Workflow "Terraform_Plan_Apply" will triggred automatically with a push in main branch with Github Actions to:
+##### 1. Workflow "Terraform_Plan_Apply" will triggred automatically with a push in main branch with Github Actions.
 
 ##### 2. There is another GitHub Work which is provided to destroy the infra created in first step. Terraform Destroy Prsent in Gighub,Repo,Actions which could be triggered manually. No Automation is provided here. Please run this if you have run the first GitHub action workflow. It is used to 
-b. To destroy all the infrastructure created in teraform.
+b. To destroy all the infrastructure created by teraform.
 
 What You need
 ===============
