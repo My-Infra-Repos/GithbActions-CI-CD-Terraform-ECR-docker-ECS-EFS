@@ -15,6 +15,12 @@ Github Actions Integration with terraform to create VPC,SG, ECR , ECS, EFS & mou
     J. Necessary Policies.
     K. Policies to assume role.
 
+**Note: We have commented out terraform apply Plan in our .github\workflows\terraform.yml file to prevent any accidental run for infra 
+creation. However we have shown complete CI CD for question no 3 in https://github.com/praveen1664/Github-Bitcoin-Pipeline.git repo. At apply stage you will get below message:
+`sh 
+Terraform Apply is commented out to prevent any accidental run. We have implemented full pipeline in Question 3 in https://github.com/praveen1664/Github-Bitcoin-Pipeline.git repository. Here you can check the Terraform Plan for resource creation or destroy name=SELECTED_COLOR::green
+`sh
+
 2. ## How it could be run?
 ##### It contain 2 Github Actions Work Flow as part of CI CD
    ###### 1. "Terraform_Plan_Apply"
