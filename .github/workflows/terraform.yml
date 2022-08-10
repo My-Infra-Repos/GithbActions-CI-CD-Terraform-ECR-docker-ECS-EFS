@@ -58,7 +58,9 @@ jobs:
 
     - name: Terraform Apply
       if: github.event_name == 'push'
-      run: echo 'Apply is commented out here as we have implemented full pipeline in Question 3 in https://github.com/praveen1664/Github-Bitcoin-Pipeline.git repository But you can chack the plan name=SELECTED_COLOR::green'
+      run: echo 'Terraform Apply is commented out to prevent any accidental run. We have implemented full pipeline in Question 3 in https://github.com/praveen1664/Github-Bitcoin-Pipeline.git repository. Here you can check the Terraform Plan for resource creation or destroy name=SELECTED_COLOR::green'
+      id: random-color-generator
+   
       #run: terraform -chdir='environment/demo' apply -auto-approve -input=false
        
 
